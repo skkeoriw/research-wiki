@@ -1,7 +1,27 @@
 {
+  "pipeline_id": "aircAruvnKk-20260525T114346",
   "source_url": "https://www.youtube.com/watch?v=aircAruvnKk",
   "source_type": "youtube",
-  "pipeline_id": "aircAruvnKk-20260525T114346",
+  "delivery_id": "",
+  "stage_b": {
+    "run_id": "direct-1779709447",
+    "start_time": "2026-05-25T11:44:31Z",
+    "end_time": "2026-05-25T11:45:25Z",
+    "duration_s": 54,
+    "api_calls": "unknown",
+    "videos_processed": 1,
+    "reports_generated": 1,
+    "mindmaps_generated": 1,
+    "output_files": [
+      "raw/notebooklm-analysis/简报-神经网络的结构与深度学习基础.md",
+      "raw/notebooklm-mindmaps/简报-神经网络的结构与深度学习基础.json",
+      "wiki/canvas/简报-神经网络的结构与深度学习基础.canvas"
+    ],
+    "source_metadata": {
+      "youtube_url": "https://www.youtube.com/watch?v=aircAruvnKk",
+      "report_title": "简报：神经网络的结构与深度学习基础"
+    }
+  },
   "stage_b_fetch": {
     "run_id": "direct-1779709429",
     "video_id": "aircAruvnKk",
@@ -11,12 +31,5 @@
     "youtube_url": "https://www.youtube.com/watch?v=aircAruvnKk",
     "thumbnail": "https://i.ytimg.com/vi/aircAruvnKk/hqdefault.jpg",
     "meta_file": "raw/youtube-metadata/aircAruvnKk.json"
-  },
-  "stage_b": {
-    "source_metadata": {
-      "title": "But what is a neural network? | Deep learning chapter 1",
-      "youtube_url": "https://www.youtube.com/watch?v=aircAruvnKk",
-      "author": "3Blue1Brown"
-    }
   }
 }
