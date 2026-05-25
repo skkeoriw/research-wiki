@@ -1,3 +1,38 @@
-# Research Wiki Index
+# YouTube Video Research Wiki
+Last updated: 2026-05-25
+Total pages: 27
 
-Knowledge graph index — auto-maintained by pipeline.
+## Sources
+- [[简报-神经网络的结构与深度学习基础]]
+
+## Entities
+- [[transformer]]
+- [[relu]]
+- [[3blue1brown]]
+- [[sigmoid]]
+- [[cnn]]
+
+## Concepts
+- [[模式识别]]
+- [[前馈神经网络]]
+- [[神经网络]]
+- [[激活函数]]
+- [[权重]]
+- [[隐藏层]]
+- [[传统编程]]
+- [[输入层]]
+- [[手写数字识别]]
+- [[参数调整]]
+- [[向量化]]
+- [[矩阵向量乘法]]
+- [[权重矩阵]]
+- [[激活值]]
+- [[神经元]]
+- [[线性代数]]
+- [[深度学习]]
+- [[输出层]]
+- [[非线性转换]]
+- [[加权总和]]
+- [[偏置]]
+
+## Mindmaps
