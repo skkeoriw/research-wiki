@@ -1,7 +1,27 @@
 {
+  "pipeline_id": "LPZh9BOjkQs-20260525T123616",
   "source_url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
   "source_type": "youtube",
-  "pipeline_id": "LPZh9BOjkQs-20260525T123616",
+  "delivery_id": "",
+  "stage_b": {
+    "run_id": "direct-1779712595",
+    "start_time": "2026-05-25T12:40:44Z",
+    "end_time": "2026-05-25T12:40:44Z",
+    "duration_s": 0,
+    "api_calls": "unknown",
+    "videos_processed": 1,
+    "reports_generated": 1,
+    "mindmaps_generated": 1,
+    "output_files": [
+      "raw/notebooklm-analysis/大语言模型-LLM-技术深度简报-原理-架构与训练全解析.md",
+      "raw/notebooklm-mindmaps/大语言模型-LLM-技术深度简报-原理-架构与训练全解析.json",
+      "wiki/canvas/大语言模型-LLM-技术深度简报-原理-架构与训练全解析.canvas"
+    ],
+    "source_metadata": {
+      "youtube_url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+      "report_title": "大语言模型（LLM）技术深度简报：原理、架构与训练全解析"
+    }
+  },
   "stage_b_fetch": {
     "run_id": "direct-1779712578",
     "video_id": "LPZh9BOjkQs",
@@ -11,12 +31,5 @@
     "youtube_url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
     "thumbnail": "https://i.ytimg.com/vi/LPZh9BOjkQs/hqdefault.jpg",
     "meta_file": "raw/youtube-metadata/LPZh9BOjkQs.json"
-  },
-  "stage_b": {
-    "source_metadata": {
-      "title": "Large Language Models explained briefly",
-      "youtube_url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
-      "author": "3Blue1Brown"
-    }
   }
 }
