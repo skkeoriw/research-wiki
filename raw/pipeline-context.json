@@ -1,5 +1,22 @@
 {
   "source_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
   "source_type": "youtube",
-  "pipeline_id": "eMlx5fFNoYc-20260526T033530"
+  "pipeline_id": "eMlx5fFNoYc-20260526T033530",
+  "stage_b_fetch": {
+    "run_id": "direct-1779766532",
+    "video_id": "eMlx5fFNoYc",
+    "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+    "author": "3Blue1Brown",
+    "published_at": "2024-04-07T12:53:54Z",
+    "youtube_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+    "thumbnail": "https://i.ytimg.com/vi/eMlx5fFNoYc/hqdefault.jpg",
+    "meta_file": "raw/youtube-metadata/eMlx5fFNoYc.json"
+  },
+  "stage_b": {
+    "source_metadata": {
+      "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+      "youtube_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+      "author": "3Blue1Brown"
+    }
+  }
 }
