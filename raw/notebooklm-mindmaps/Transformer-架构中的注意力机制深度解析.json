@@ -1,0 +1,125 @@
+{
+  "name": "Transformer 中的注意力机制",
+  "children": [
+    {
+      "name": "核心概念与目标",
+      "children": [
+        {
+          "name": "预测下一个 Token"
+        },
+        {
+          "name": "动态调整词嵌入 (Embeddings)"
+        },
+        {
+          "name": "融入上下文语义 (Contextual Meaning)"
+        },
+        {
+          "name": "并行化计算优势 (GPU)"
+        }
+      ]
+    },
+    {
+      "name": "注意力机制的组件",
+      "children": [
+        {
+          "name": "查询矩阵 (Query Matrix - Wq)",
+          "children": [
+            {
+              "name": "代表“寻找什么”"
+            },
+            {
+              "name": "映射到低维空间 (如128维)"
+            }
+          ]
+        },
+        {
+          "name": "键矩阵 (Key Matrix - Wk)",
+          "children": [
+            {
+              "name": "代表“包含什么信息”"
+            },
+            {
+              "name": "与查询进行匹配"
+            }
+          ]
+        },
+        {
+          "name": "值矩阵 (Value Matrix - Wv)",
+          "children": [
+            {
+              "name": "代表“要传递的实际内容”"
+            },
+            {
+              "name": "低秩分解：Value-Down 和 Value-Up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "计算流程 (单头注意力)",
+      "children": [
+        {
+          "name": "计算点积 (Dot Product) 衡量关联度"
+        },
+        {
+          "name": "缩放处理 (Scaling) 保持稳定性"
+        },
+        {
+          "name": "Softmax 归一化生成注意力权重"
+        },
+        {
+          "name": "加权求和生成 Delta-e (更新向量)"
+        },
+        {
+          "name": "掩码 (Masking) 防止查看后续 Token"
+        }
+      ]
+    },
+    {
+      "name": "多头注意力 (Multi-headed Attention)",
+      "children": [
+        {
+          "name": "并行运行多个注意力头"
+        },
+        {
+          "name": "捕获不同的上下文关系 (如语法、指代)"
+        },
+        {
+          "name": "GPT-3 包含 96 个头"
+        },
+        {
+          "name": "结果汇总并添加到原始嵌入"
+        }
+      ]
+    },
+    {
+      "name": "模型结构与规模 (以 GPT-3 为例)",
+      "children": [
+        {
+          "name": "96 层堆叠"
+        },
+        {
+          "name": "12,288 维嵌入空间"
+        },
+        {
+          "name": "注意力参数：约 580 亿 (占总数 1/3)"
+        },
+        {
+          "name": "MLP (多层感知机) 占据多数参数"
+        }
+      ]
+    },
+    {
+      "name": "特殊类型",
+      "children": [
+        {
+          "name": "自注意力 (Self-attention)：处理单一序列"
+        },
+        {
+          "name": "交叉注意力 (Cross-attention)：处理跨语言/模态数据"
+        }
+      ]
+    }
+  ]
+}

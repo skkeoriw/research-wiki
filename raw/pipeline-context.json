@@ -1,7 +1,27 @@
 {
+  "pipeline_id": "eMlx5fFNoYc-20260526T033530",
   "source_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
   "source_type": "youtube",
-  "pipeline_id": "eMlx5fFNoYc-20260526T033530",
+  "delivery_id": "",
+  "stage_b": {
+    "run_id": "direct-1779766555",
+    "start_time": "2026-05-26T03:35:30Z",
+    "end_time": "2026-05-26T03:35:54Z",
+    "duration_s": 24,
+    "api_calls": "unknown",
+    "videos_processed": 1,
+    "reports_generated": 1,
+    "mindmaps_generated": 1,
+    "output_files": [
+      "raw/notebooklm-analysis/Transformer-架构中的注意力机制深度解析.md",
+      "raw/notebooklm-mindmaps/Transformer-架构中的注意力机制深度解析.json",
+      "wiki/canvas/Transformer-架构中的注意力机制深度解析.canvas"
+    ],
+    "source_metadata": {
+      "youtube_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+      "report_title": "Transformer 架构中的注意力机制深度解析"
+    }
+  },
   "stage_b_fetch": {
     "run_id": "direct-1779766532",
     "video_id": "eMlx5fFNoYc",
@@ -11,12 +31,5 @@
     "youtube_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
     "thumbnail": "https://i.ytimg.com/vi/eMlx5fFNoYc/hqdefault.jpg",
     "meta_file": "raw/youtube-metadata/eMlx5fFNoYc.json"
-  },
-  "stage_b": {
-    "source_metadata": {
-      "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
-      "youtube_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
-      "author": "3Blue1Brown"
-    }
   }
 }

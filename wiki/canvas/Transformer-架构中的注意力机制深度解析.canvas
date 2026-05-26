@@ -1,0 +1,594 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "type": "text",
+      "text": "Transformer 中的注意力机制",
+      "x": 0,
+      "y": 864,
+      "width": 280,
+      "height": 52,
+      "color": "6"
+    },
+    {
+      "id": "1",
+      "type": "text",
+      "text": "核心概念与目标",
+      "x": 360,
+      "y": 108,
+      "width": 240,
+      "height": 52,
+      "color": "5"
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "text": "预测下一个 Token",
+      "x": 680,
+      "y": 0,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "3",
+      "type": "text",
+      "text": "动态调整词嵌入 (Embeddings)",
+      "x": 680,
+      "y": 72,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "4",
+      "type": "text",
+      "text": "融入上下文语义 (Contextual Meaning)",
+      "x": 680,
+      "y": 144,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "5",
+      "type": "text",
+      "text": "并行化计算优势 (GPU)",
+      "x": 680,
+      "y": 216,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "6",
+      "type": "text",
+      "text": "注意力机制的组件",
+      "x": 360,
+      "y": 468,
+      "width": 240,
+      "height": 52,
+      "color": "5"
+    },
+    {
+      "id": "7",
+      "type": "text",
+      "text": "查询矩阵 (Query Matrix - Wq)",
+      "x": 680,
+      "y": 324,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "8",
+      "type": "text",
+      "text": "代表“寻找什么”",
+      "x": 960,
+      "y": 288,
+      "width": 180,
+      "height": 52,
+      "color": "3"
+    },
+    {
+      "id": "9",
+      "type": "text",
+      "text": "映射到低维空间 (如128维)",
+      "x": 960,
+      "y": 360,
+      "width": 180,
+      "height": 52,
+      "color": "3"
+    },
+    {
+      "id": "10",
+      "type": "text",
+      "text": "键矩阵 (Key Matrix - Wk)",
+      "x": 680,
+      "y": 468,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "11",
+      "type": "text",
+      "text": "代表“包含什么信息”",
+      "x": 960,
+      "y": 432,
+      "width": 180,
+      "height": 52,
+      "color": "3"
+    },
+    {
+      "id": "12",
+      "type": "text",
+      "text": "与查询进行匹配",
+      "x": 960,
+      "y": 504,
+      "width": 180,
+      "height": 52,
+      "color": "3"
+    },
+    {
+      "id": "13",
+      "type": "text",
+      "text": "值矩阵 (Value Matrix - Wv)",
+      "x": 680,
+      "y": 612,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "14",
+      "type": "text",
+      "text": "代表“要传递的实际内容”",
+      "x": 960,
+      "y": 576,
+      "width": 180,
+      "height": 52,
+      "color": "3"
+    },
+    {
+      "id": "15",
+      "type": "text",
+      "text": "低秩分解：Value-Down 和 Value-Up",
+      "x": 960,
+      "y": 648,
+      "width": 180,
+      "height": 52,
+      "color": "3"
+    },
+    {
+      "id": "16",
+      "type": "text",
+      "text": "计算流程 (单头注意力)",
+      "x": 360,
+      "y": 864,
+      "width": 240,
+      "height": 52,
+      "color": "5"
+    },
+    {
+      "id": "17",
+      "type": "text",
+      "text": "计算点积 (Dot Product) 衡量关联度",
+      "x": 680,
+      "y": 720,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "18",
+      "type": "text",
+      "text": "缩放处理 (Scaling) 保持稳定性",
+      "x": 680,
+      "y": 792,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "19",
+      "type": "text",
+      "text": "Softmax 归一化生成注意力权重",
+      "x": 680,
+      "y": 864,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "20",
+      "type": "text",
+      "text": "加权求和生成 Delta-e (更新向量)",
+      "x": 680,
+      "y": 936,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "21",
+      "type": "text",
+      "text": "掩码 (Masking) 防止查看后续 Token",
+      "x": 680,
+      "y": 1008,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "22",
+      "type": "text",
+      "text": "多头注意力 (Multi-headed Attention)",
+      "x": 360,
+      "y": 1188,
+      "width": 240,
+      "height": 52,
+      "color": "5"
+    },
+    {
+      "id": "23",
+      "type": "text",
+      "text": "并行运行多个注意力头",
+      "x": 680,
+      "y": 1080,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "24",
+      "type": "text",
+      "text": "捕获不同的上下文关系 (如语法、指代)",
+      "x": 680,
+      "y": 1152,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "25",
+      "type": "text",
+      "text": "GPT-3 包含 96 个头",
+      "x": 680,
+      "y": 1224,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "26",
+      "type": "text",
+      "text": "结果汇总并添加到原始嵌入",
+      "x": 680,
+      "y": 1296,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "27",
+      "type": "text",
+      "text": "模型结构与规模 (以 GPT-3 为例)",
+      "x": 360,
+      "y": 1476,
+      "width": 240,
+      "height": 52,
+      "color": "5"
+    },
+    {
+      "id": "28",
+      "type": "text",
+      "text": "96 层堆叠",
+      "x": 680,
+      "y": 1368,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "29",
+      "type": "text",
+      "text": "12,288 维嵌入空间",
+      "x": 680,
+      "y": 1440,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "30",
+      "type": "text",
+      "text": "注意力参数：约 580 亿 (占总数 1/3)",
+      "x": 680,
+      "y": 1512,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "31",
+      "type": "text",
+      "text": "MLP (多层感知机) 占据多数参数",
+      "x": 680,
+      "y": 1584,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "32",
+      "type": "text",
+      "text": "特殊类型",
+      "x": 360,
+      "y": 1692,
+      "width": 240,
+      "height": 52,
+      "color": "5"
+    },
+    {
+      "id": "33",
+      "type": "text",
+      "text": "自注意力 (Self-attention)：处理单一序列",
+      "x": 680,
+      "y": 1656,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    },
+    {
+      "id": "34",
+      "type": "text",
+      "text": "交叉注意力 (Cross-attention)：处理跨语言/模态数据",
+      "x": 680,
+      "y": 1728,
+      "width": 200,
+      "height": 52,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1-2",
+      "fromNode": "1",
+      "toNode": "2",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1-3",
+      "fromNode": "1",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1-4",
+      "fromNode": "1",
+      "toNode": "4",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1-5",
+      "fromNode": "1",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e0-1",
+      "fromNode": "0",
+      "toNode": "1",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e7-8",
+      "fromNode": "7",
+      "toNode": "8",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e7-9",
+      "fromNode": "7",
+      "toNode": "9",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6-7",
+      "fromNode": "6",
+      "toNode": "7",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e10-11",
+      "fromNode": "10",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e10-12",
+      "fromNode": "10",
+      "toNode": "12",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6-10",
+      "fromNode": "6",
+      "toNode": "10",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e13-14",
+      "fromNode": "13",
+      "toNode": "14",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e13-15",
+      "fromNode": "13",
+      "toNode": "15",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6-13",
+      "fromNode": "6",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e0-6",
+      "fromNode": "0",
+      "toNode": "6",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e16-17",
+      "fromNode": "16",
+      "toNode": "17",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e16-18",
+      "fromNode": "16",
+      "toNode": "18",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e16-19",
+      "fromNode": "16",
+      "toNode": "19",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e16-20",
+      "fromNode": "16",
+      "toNode": "20",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e16-21",
+      "fromNode": "16",
+      "toNode": "21",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e0-16",
+      "fromNode": "0",
+      "toNode": "16",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e22-23",
+      "fromNode": "22",
+      "toNode": "23",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e22-24",
+      "fromNode": "22",
+      "toNode": "24",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e22-25",
+      "fromNode": "22",
+      "toNode": "25",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e22-26",
+      "fromNode": "22",
+      "toNode": "26",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e0-22",
+      "fromNode": "0",
+      "toNode": "22",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e27-28",
+      "fromNode": "27",
+      "toNode": "28",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e27-29",
+      "fromNode": "27",
+      "toNode": "29",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e27-30",
+      "fromNode": "27",
+      "toNode": "30",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e27-31",
+      "fromNode": "27",
+      "toNode": "31",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e0-27",
+      "fromNode": "0",
+      "toNode": "27",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e32-33",
+      "fromNode": "32",
+      "toNode": "33",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e32-34",
+      "fromNode": "32",
+      "toNode": "34",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e0-32",
+      "fromNode": "0",
+      "toNode": "32",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}
