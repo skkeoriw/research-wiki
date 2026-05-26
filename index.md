@@ -1,10 +1,11 @@
 # YouTube Video Research Wiki
-Last updated: 2026-05-25
-Total pages: 33
+Last updated: 2026-05-26
+Total pages: 2
 
 ## Sources
 - [[简报-神经网络的结构与深度学习基础]]
 - [[大语言模型-LLM-技术深度简报-原理-架构与训练全解析]]
+- [[Transformer-架构中的注意力机制深度解析]]
 
 ## Entities
 - [[gpu]]
@@ -13,6 +14,7 @@ Total pages: 33
 - [[3blue1brown]]
 - [[gpt-3]]
 - [[google]]
+- [[gpt]]
 - [[sigmoid]]
 - [[cnn]]
 
